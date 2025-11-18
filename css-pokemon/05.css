@@ -12,12 +12,25 @@
 .item-1 {
     flex-basis: 100px;
     align-self: flex-end;
+
+    background: #7a1f64;   
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
 }
 
 .item-2 {
     flex-basis: 100px;
+
+    background: #d8b73a;   
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .item-3 {
     flex-basis: 100px;
+
+    background: #b184b7;   
+    padding: 20px;
+    border-radius: 8px;
 }

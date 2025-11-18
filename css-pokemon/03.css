@@ -9,14 +9,19 @@
     height: 900px;
 }
 
-.item-1 {
+.item-1, .item-2, .item-3 {
     flex-basis: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
 }
 
-.item-2 {
-    flex-basis: 100px;
-}
+.item-1 { background-color: #d2b48c; } /* Eevee */
+.item-2 { background-color: #ffb38a; } /* Vulpix */
+.item-3 { background-color: #f5c4e1; } /* Jigglypuff */
 
-.item-3 {
-    flex-basis: 100px;
+img {
+    width: 100%;
+    display: block;
 }
