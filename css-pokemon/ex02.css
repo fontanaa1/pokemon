@@ -1,0 +1,49 @@
+
+body {
+    background: linear-gradient(to bottom, #87CEEB, #98FB98); /* Céu azul e grama verde */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    gap: 16px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    border: 2px solid #FFD700; /* Borda dourada como Pokébola */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.item-1, .item-2, .item-3 {
+    flex-basis: 100px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Efeito de hover */
+}
+
+.item-1:hover, .item-2:hover, .item-3:hover {
+    transform: scale(1.1); /* Cresce um pouco ao passar o mouse */
+}
+
+.item-1 img, .item-2 img, .item-3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Forma circular como Pokébola */
+    border: 3px solid #FF4500; /* Vermelho para Charmander */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.item-2 img {
+    border-color: #1E90FF; /* Azul para Squirtle */
+}
+
+.item-3 img {
+    border-color: #32CD32; /* Verde para Bulbasaur */
+}
