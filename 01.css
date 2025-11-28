@@ -1,0 +1,48 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 16px;
+    
+}
+
+.item-1 {
+    flex-basis: 100px;
+
+    background: #f7e7b2;      
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.item-2 {
+    flex-basis: 100px;
+
+    background: #f7b2b9;      
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.item-3 {
+    flex-basis: 100px;
+
+    background: #d8c1a3;      
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.item-1:hover, .item-2:hover, .item-3:hover {
+    transform: scale(1.1); /* Cresce um pouco ao passar o mouse */
+}
+
+body {
+    background: linear-gradient(to bottom, #87CEEB, #98FB98); /* Céu azul e grama verde */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}

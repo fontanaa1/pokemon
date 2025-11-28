@@ -1,0 +1,33 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+
+.sentret, .ledyba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hoothoot, .spinarak {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sentret  { background: #f7e7b2; padding: 20px; }
+.ledyba   { background: #f7b2b9; padding: 20px; }
+.hoothoot { background: #d8c1a3; padding: 20px; }
+.spinarak { background: #b7d9b1; padding: 20px; }
+
+.sentret:hover, .ledyba:hover, .hoothoot:hover, .spinarak:hover {
+    transform: scale(1.1); /* Cresce um pouco ao passar o mouse */
+}
+
+body {
+    background: linear-gradient(to bottom, #87CEEB, #98FB98); /* Céu azul e grama verde */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}

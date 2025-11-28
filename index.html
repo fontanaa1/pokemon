@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios: CSS Flexbox e CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadContent(file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o conteúdo:', error));
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Exercícios: CSS Flexbox e CSS Grid</h1>
+        <p> Escolha um Pokémon para ver as informações!</p>
+    </header>
+
+    <section class="buttons">
+        <button onclick="loadContent('01.html')">Pokémon 1: Centralizar na Box</button>
+        <button onclick="loadContent('02.html')">Pokémon 2: Espaçar Igualmente</button>
+        <button onclick="loadContent('03.html')">Pokémon 3: Pokémon na Grama (Alinhamento Vertical)</button>
+        <button onclick="loadContent('04.html')">Pokémon 4: Torre Pokémon (Mudando a Direção)</button>
+        <button onclick="loadContent('05.html')">Pokémon 5: O Gengar Fugitivo! (Alinhamento Individual)</button>
+        <button onclick="loadContent('06.html')">Pokémon 6: Habitat 2x2</button>
+        <button onclick="loadContent('07.html')">Pokémon 7: O Snorlax Bloqueia a Passagem (Column Span)</button>
+        <button onclick="loadContent('08.html')">Pokémon 8: A Videira do Oddish (Row Span)</button>
+        <button onclick="loadContent('09.html')">Pokémon 9: Alinhamento no Habitat</button>
+        <button onclick="loadContent('10.html')">Pokémon 10: Posicionando os Lendários (Posicionamento Específico)</button>
+    </section>
+
+    <section id="content" class="content">
+        <!-- O conteúdo será carregado aqui -->
+    </section>
+
+    <footer>
+        <p>© 2025 Pokémon World. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

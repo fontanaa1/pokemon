@@ -1,0 +1,37 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 16px;
+    height: 900px;
+}
+
+.item-1, .item-2, .item-3 {
+    flex-basis: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(4px);
+}
+
+.item-1 { background-color: #d2b48c; } /* Eevee */
+.item-2 { background-color: #ffb38a; } /* Vulpix */
+.item-3 { background-color: #f5c4e1; } /* Jigglypuff */
+
+.item-1:hover, .item-2:hover, .item-3:hover {
+    transform: scale(1.1); /* Cresce um pouco ao passar o mouse */
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    background: linear-gradient(to bottom, #87CEEB, #98FB98); /* Céu azul e grama verde */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
